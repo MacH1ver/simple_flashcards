@@ -4,7 +4,7 @@ from tkinter import messagebox
 import random
 
 # Load Excel file
-file_path = "/Users/erlandw/Downloads/EEN130_quiz.xlsx"   # change if needed
+file_path = 'insert filename here' # change if needed
 df = pd.read_excel(file_path)
 
 # Extract questions and answers as lists
