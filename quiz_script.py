@@ -115,7 +115,7 @@ def flip_card(event=None):
         card_label.config(text=answers[current_index])
         showing_answer = True
 
-def next_question():
+def next_question(event=None):
     """Go to next question."""
     global current_index, remaining_questions, history, history_pos, showing_answer
     if random_mode:
@@ -134,7 +134,7 @@ def next_question():
     showing_answer = False
     show_question()
 
-def prev_question():
+def prev_question(event=None):
     """Go to previous question."""
     global current_index, history_pos, showing_answer
     if random_mode:
@@ -493,4 +493,11 @@ next_button.pack(side="left", expand=True, fill="x", padx=18)
 show_question()
 update_mode_label()
 root.after(0, update_card_layout)
+
+# Keyboard navigation
+root.bind("<Right>", next_question)
+root.bind("<Left>", prev_question)
+root.bind("<Up>", flip_card)
+root.bind("<Down>", flip_card)
+
 root.mainloop()
