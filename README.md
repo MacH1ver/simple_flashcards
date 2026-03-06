@@ -9,6 +9,7 @@ Simple flashcards is a python script that takes an .xlsx or .csv file with quest
 5. Choose if you want the questions in sequential or random order
 6. Learn!
 7. In the same folder as the script a session.json file will be saved. That's where the previous question files will be so after you close it down you can go back and use the same file without having to drag it in again.
+8. Navigation can be done with the arrow keys, left arrow for next, right arrow for previous and up or down arrow to reveal the answer.
 
 ### Required packages:
 
